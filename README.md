@@ -12,7 +12,6 @@ This repository contains a Python-based Telegram bot that interacts with the Gem
 - [Error Handling](#error-handling)
 - [Customization](#customization)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -42,11 +41,6 @@ This repository contains a Python-based Telegram bot that interacts with the Gem
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. **Install the Required Packages**:
-    ```bash
-    pip install -r requirements.txt
     ```
 
 4. **Set Up Your API Keys**:
@@ -79,30 +73,10 @@ This repository contains a Python-based Telegram bot that interacts with the Gem
 
 You can customize the bot by adding more commands or modifying the existing ones. For example, you can add new command handlers or integrate additional APIs to enhance the bot's functionality.
 
-### Adding a New Command
-
-To add a new command, follow these steps:
-
-1. Define a new function in the bot script:
-   ```python
-   async def new_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-       await update.message.reply_text("This is a new command!")
-   ```
-
-2. Register the new command handler:
-   ```python
-   application.add_handler(CommandHandler("newcommand", new_command))
-   ```
-
-3. Run the bot again, and you can now use `/newcommand` in the chat.
 
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. Please ensure that your code adheres to the existing coding style and passes all tests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
